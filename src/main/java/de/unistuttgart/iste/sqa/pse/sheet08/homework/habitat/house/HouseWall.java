@@ -1,7 +1,8 @@
 package de.unistuttgart.iste.sqa.pse.sheet08.homework.habitat.house;
 
-import de.hamstersimulator.objectsfirst.datatypes.Location;
 import java.util.Optional;
+
+import de.hamstersimulator.objectsfirst.datatypes.Location;
 
 /**
  * A wall in a {@link House}.
@@ -219,7 +220,7 @@ public final class HouseWall {
 	 */
 	private boolean isInSameColumn(final HouseWall otherWall) {
 		assert otherWall != null;
-		return start.getColumn() != otherWall.getStart().getColumn();
+		return start.getColumn() == otherWall.getStart().getColumn();
 	}
 
 	/**
@@ -279,7 +280,7 @@ public final class HouseWall {
 	 */
 	private boolean isInSameRow(final HouseWall otherWall) {
 		assert otherWall != null;
-		return start.getRow() != otherWall.getStart().getRow();
+		return start.getRow() == otherWall.getStart().getRow();
 	}
 
 	/**
