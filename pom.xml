@@ -42,12 +42,6 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>OlympicsHamsterGameApp</id>
-						<configuration>
-							<mainClass>de.unistuttgart.iste.sqa.pse.sheet08.homework.olympics.OlympicsHamsterGameApp</mainClass>
-						</configuration>
-					</execution>
-					<execution>
 						<id>HabitatHamsterGameApp</id>
 						<configuration>
 							<mainClass>de.unistuttgart.iste.sqa.pse.sheet08.homework.habitat.game.HabitatHamsterGameApp</mainClass>
