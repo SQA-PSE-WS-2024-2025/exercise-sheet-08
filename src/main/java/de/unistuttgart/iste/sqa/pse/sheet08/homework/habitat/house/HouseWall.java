@@ -1,8 +1,7 @@
 package de.unistuttgart.iste.sqa.pse.sheet08.homework.habitat.house;
 
-import java.util.Optional;
-
 import de.hamstersimulator.objectsfirst.datatypes.Location;
+import java.util.Optional;
 
 /**
  * A wall in a {@link House}.

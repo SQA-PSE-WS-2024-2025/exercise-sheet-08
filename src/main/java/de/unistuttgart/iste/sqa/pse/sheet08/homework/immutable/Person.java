@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * Represents a person with a name and birthdate.
- * 
+ *
  * Name and birthdate must not be {@code null} and the name must not be blank.
  *
  * @author your name
@@ -47,7 +47,7 @@ public class Person {
 
 	/**
 	 * Sets this person's name.
-	 * 
+	 *
 	 * @param name The new name. Must not be {@code null} or blank.
 	 * @throws IllegalArgumentException If the preconditions are not satisfied.
 	 */

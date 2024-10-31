@@ -1,11 +1,10 @@
 package de.unistuttgart.iste.sqa.pse.sheet08.homework.habitat.house;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import de.hamstersimulator.objectsfirst.datatypes.Location;
 import de.hamstersimulator.objectsfirst.external.model.Territory;
 import de.hamstersimulator.objectsfirst.external.model.TerritoryBuilder;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * This class is like the building company that builds the house.
