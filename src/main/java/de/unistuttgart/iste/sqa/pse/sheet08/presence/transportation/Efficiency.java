@@ -5,13 +5,13 @@ package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
  */
 public final class Efficiency {
 
-	/*@
-	@ requires maxPersonCount > 0;
-	@ requires maxSpeed > 0f;
-	@ ensures \result != null;
-	@*/
 	/**
 	 * Calculates the efficiency category based on the maxPersonCount and speed of the corresponding transportation method
+	 *
+	 * Requires that the {@code maxPersonCount} is greater than 0.
+	 * Requires that the {@code maxSpeed} is greater than 0.
+	 * Ensures that the returned efficiency category is not {@code null}.
+	 *
 	 * @param maxPersonCount maximal person count of the corresponding transportation method
 	 * @param maxSpeed overall speed of the corresponding transportation method
 	 * @return the calculated efficiency category
@@ -36,14 +36,13 @@ public final class Efficiency {
 		}
 	}
 
-	/*@
-	@ requires energyType !== null;
-	@ ensures \result != null;
-	@*/
 	/**
 	 * Calculates the efficiency category based on the used energy type of the corresponding transportation method
-	 * @param maxPersonCount maximal person count of the corresponding transportation method
-	 * @param speed overall speed of the corresponding transportation method
+	 *
+	 * Requires that the {@code energyType} is not {@code null}.
+	 * Ensures that the returned efficiency category is not {@code null}.
+	 *
+	 * @param energyType the type of energy to use for the efficiency calculation.
 	 * @return the calculated efficiency category
 	 * @throws IllegalArgumentException If the preconditions are not satisfied.
 	 */

@@ -5,11 +5,11 @@ package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
  */
 public class Yacht extends PrivateTransportation {
 
-	/*@
-	@ requires registrationNumber != null;
-	@*/
 	/**
 	 * Creates a new yacht object.
+	 *
+	 * Requires that {@code registrationNumber} is not {@code null}.
+	 *
 	 * @param registrationNumber Registration number of the yacht.
 	 */
 	public Yacht(String registrationNumber) {
