@@ -4,16 +4,16 @@ package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
  * A public transportation method for people.
  */
 public abstract class PublicTransportation implements Transportation {
-	// @ private instance invariant transportationMethodName != null;
+	// Invariant: The transportationMethodName may not be {@code null}.
 
 	private final String transportationMethodName;
 
-	/*@
-	@ requires transportationMethodName != null;
-	@ ensures this.transportationMethodName == transportationMethodName;
-	@*/
 	/**
 	 * Creates a new public transportation object.
+	 *
+	 * Requires that the {@code transportationMethodName} is not {@code null}.
+	 * Ensures that this.transportationMethodName is equal to the provided {@code transportationMethodName}.
+	 *
 	 * @param transportationMethodName The name of the transportation method.
 	 * @throws IllegalArgumentException If the preconditions are not satisfied.
 	 */
@@ -36,10 +36,9 @@ public abstract class PublicTransportation implements Transportation {
 		return Efficiency.calculateEfficiency(this.getTotalCapacity(), this.getSpeed());
 	}
 
-	/*@
-	@ ensures \result > 0;
-	@*/
 	/**
+	 * Ensures that the returned speed is greater than 0.
+	 *
 	 * @return The speed of this transportation method in km/h
 	 */
 	public abstract float getSpeed();

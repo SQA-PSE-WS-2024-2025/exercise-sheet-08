@@ -4,16 +4,16 @@ package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
  * A private transportation method for people.
  */
 public abstract class PrivateTransportation implements Transportation {
-	// @ private instance invariant registrationNumber != null;
+	// Invariant: The registrationNumber may not be {@code null}.
 
 	private final String registrationNumber;
 
-	/*@
-	@ requires registrationNumber != null;
-	@ ensures this.registrationNumber == registrationNumber;
-	@*/
 	/**
 	 * Creates a new private transportation object.
+	 *
+	 * Requires that the {@code registrationNumber} is not {@code null}.
+	 * Ensures that the class attribute this.registrationNumber is equal to {@code registrationNumber}.
+	 *
 	 * @param registrationNumber The registration number of the transportation method.
 	 * @throws IllegalArgumentException If the preconditions are not satisfied.
 	 */
@@ -24,20 +24,18 @@ public abstract class PrivateTransportation implements Transportation {
 		this.registrationNumber = registrationNumber;
 	}
 
-	/*@
-	@ ensures \result == registrationNumber;
-	@*/
 	/**
+	 * Ensures that the returned result is equal to {@code this.registrationNumber}.
+	 *
 	 * @return The registration number of this transportation method.
 	 */
-	public /*@ pure @*/ String getRegistrationNumber() {
+	public String getRegistrationNumber() {
 		return registrationNumber;
 	}
 
-	/*@
-	@ ensures \result > 0;
-	@*/
 	/**
+	 * Ensures that the returned speed is greater than 0.
+	 *
 	 * @return The speed of this transportation method in km/h
 	 */
 	public abstract float getSpeed();
