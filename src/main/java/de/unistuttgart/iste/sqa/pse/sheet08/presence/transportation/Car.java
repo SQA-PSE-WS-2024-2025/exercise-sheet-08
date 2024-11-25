@@ -72,6 +72,6 @@ public class Car {
 	 * Prints the general vehicle information of the corresponding transportation method
 	 */
 	public void printTransportationInfo() {
-		System.out.println("Registration number: " + registrationNumber + ", Speed: " + this.getSpeed() + " km/h");
+		System.out.format("Registration number: %s, Speed: %f kmh/h", registrationNumber, this.getSpeed());
 	}
 }

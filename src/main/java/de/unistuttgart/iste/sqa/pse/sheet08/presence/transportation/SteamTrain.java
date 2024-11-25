@@ -24,6 +24,6 @@ public final class SteamTrain extends Train {
 
 	@Override
 	public void printTransportationInfo() {
-		System.out.format("The steam train has a total passenger capacity of %s persons.", this.getTotalCapacity());
+		System.out.format("The steam train has a total passenger capacity of %d persons.", this.getTotalCapacity());
 	}
 }

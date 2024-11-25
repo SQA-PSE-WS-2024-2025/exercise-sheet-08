@@ -47,7 +47,6 @@ public abstract class PublicTransportation implements Transportation {
 	 * Prints the general vehicle information of the corresponding transportation method
 	 */
 	public void printTransportationInfo() {
-		System.out.println(
-				"Transportation method name: " + transportationMethodName + ", Speed: " + this.getSpeed() + " km/h");
+		System.out.format("Transportation method name: %s, Speed: %f km/h", transportationMethodName, this.getSpeed());
 	}
 }
