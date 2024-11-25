@@ -4,7 +4,7 @@ package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
  * A privately owned car.
  */
 public class Car {
-	// Invariant: The registrationNumber may not be {@code null}.
+	// Invariant: The registrationNumber must not be {@code null}.
 
 	private final String registrationNumber;
 
