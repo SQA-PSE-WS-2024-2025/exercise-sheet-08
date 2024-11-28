@@ -62,8 +62,9 @@ public class Person {
 	 * Sets this person's birth date.
 	 *
 	 * @param birthDate The new birth date. Must not be {@code null}.
+	 * @throws IllegalArgumentException If the precondition is not satisfied.
 	 */
-	public void setBirthDate(final Date birthDate) {
+	public void setBirthDate(final Date birthDate) throws IllegalArgumentException {
 		if (birthDate == null) {
 			throw new IllegalArgumentException("A person's birth date must not be null.");
 		}
