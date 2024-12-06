@@ -1,5 +1,7 @@
 package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
 
+import de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation.energyefficiency.EfficiencyCategory;
+
 /**
  * A privately owned car.
  */
@@ -30,15 +32,6 @@ public class Car {
 	 */
 	public int getTotalCapacity() {
 		return 5;
-	}
-
-	/**
-	 * Ensures that the returned transportation type is not {@code null}.
-	 *
-	 * @return The transportation type of the car.
-	 */
-	public TransportationType getTransportationType() {
-		return TransportationType.LAND;
 	}
 
 	/**

@@ -1,5 +1,7 @@
 package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
 
+import de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation.energyefficiency.EnergyType;
+
 /**
  * A hyperloop train that carries passengers at extremely high speeds.
  */

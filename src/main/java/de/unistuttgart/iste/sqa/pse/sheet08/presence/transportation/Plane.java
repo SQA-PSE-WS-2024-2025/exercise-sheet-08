@@ -23,11 +23,6 @@ public final class Plane extends PublicTransportation {
 	}
 
 	@Override
-	public TransportationType getTransportationType() {
-		return TransportationType.AIR;
-	}
-
-	@Override
 	public void printTransportationInfo() {
 		System.out.format("This plane can reach a speed up to %f km/h", this.getSpeed());
 	}

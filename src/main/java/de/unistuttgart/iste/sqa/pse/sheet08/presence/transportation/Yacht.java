@@ -1,5 +1,7 @@
 package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
 
+import de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation.energyefficiency.EfficiencyCategory;
+
 /**
  * A private yacht.
  */
@@ -19,11 +21,6 @@ public class Yacht extends PrivateTransportation {
 	@Override
 	public int getTotalCapacity() {
 		return 10;
-	}
-
-	@Override
-	public TransportationType getTransportationType() {
-		return TransportationType.WATER;
 	}
 
 	@Override

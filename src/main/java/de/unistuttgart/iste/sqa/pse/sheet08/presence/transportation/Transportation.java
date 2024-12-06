@@ -1,5 +1,7 @@
 package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
 
+import de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation.energyefficiency.EfficiencyCategory;
+
 /**
  * A transportation method for people.
  */
@@ -11,13 +13,6 @@ public interface Transportation {
 	 * @return The maximum number of people the transportation method can carry at a time.
 	 */
 	public int getTotalCapacity();
-
-	/**
-	 * Ensures that the returned transportation type is not {@code null}.
-	 *
-	 * @return The transportation type of the transportation method.
-	 */
-	public TransportationType getTransportationType();
 
 	/**
 	 * Ensures that the return efficiency category is not {@code null}.

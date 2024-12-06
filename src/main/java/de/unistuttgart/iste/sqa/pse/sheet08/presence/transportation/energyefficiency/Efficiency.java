@@ -1,4 +1,4 @@
-package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
+package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation.energyefficiency;
 
 /**
  * Provides static methods for efficiency calculations.

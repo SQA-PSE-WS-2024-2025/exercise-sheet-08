@@ -18,11 +18,6 @@ public class Ferry extends PublicTransportation {
 	}
 
 	@Override
-	public TransportationType getTransportationType() {
-		return TransportationType.WATER;
-	}
-
-	@Override
 	public float getSpeed() {
 		return 50;
 	}

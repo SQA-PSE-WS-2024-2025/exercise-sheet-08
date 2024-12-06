@@ -1,5 +1,9 @@
 package de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation;
 
+import de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation.energyefficiency.Efficiency;
+import de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation.energyefficiency.EfficiencyCategory;
+import de.unistuttgart.iste.sqa.pse.sheet08.presence.transportation.energyefficiency.EnergyType;
+
 /**
  * A train that carries passengers.
  */
@@ -28,18 +32,6 @@ public abstract class Train extends PublicTransportation {
 		this.energyType = energyType;
 	}
 
-	@Override
-	public TransportationType getTransportationType() {
-		return TransportationType.LAND;
-	}
-
-	/**
-	 * Prints this train's energy type to the console.
-	 */
-	public void printEnergyType() {
-		System.out.format("Energy type: %s", energyType);
-	}
-
 	/**
 	 * Calculates the efficiency category of this train, based on either capacity and speed or the energy type used.
 	 *
@@ -48,7 +40,7 @@ public abstract class Train extends PublicTransportation {
 	 * @param useEnergyType If true, the energy type is used for the calculation, otherwise the capacity and speed are used.
 	 * @return The efficiency category of the current transportation method.
 	 */
-	public EfficiencyCategory getEfficiencyCategory(boolean useEnergyType) {
+	public EfficiencyCategory getEfficiencyCategory(final boolean useEnergyType) {
 		if (useEnergyType) {
 			return Efficiency.calculateEfficiency(energyType);
 		} else {
@@ -58,8 +50,6 @@ public abstract class Train extends PublicTransportation {
 
 	@Override
 	public void printTransportationInfo() {
-		System.out.format(
-				"The used transportation method has the transportation type %s and the energy type %s",
-				this.getTransportationType(), energyType);
+		System.out.format("This train has the energy type %s", energyType);
 	}
 }
