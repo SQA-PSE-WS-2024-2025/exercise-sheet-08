@@ -49,16 +49,9 @@ public final class HabitatHamsterGame extends SimpleHamsterGame {
 	 * Requires that paule is at location (1, 11).
 	 */
 	private void checkNorthernHouseWall() {
-		assert paule.getLocation().equals(new Location(1, 11));
+		assert paule.getLocation().equals(new Location(0, 11));
 		turnTowards(Direction.WEST);
-		checkWallSegments(3);
-		turnRight();
-		paule.move();
-		paule.turnLeft();
-		checkWallSegments(4);
-		paule.move();
-		checkDoor();
-		checkWallSegments(2);
+		checkWallSegments(10);
 		paule.move();
 	}
 
@@ -69,12 +62,12 @@ public final class HabitatHamsterGame extends SimpleHamsterGame {
 	 * Requires that paule is at location (7, 11).
 	 */
 	private void checkEasternHouseWall() {
-		assert paule.getLocation().equals(new Location(7, 11));
+		assert paule.getLocation().equals(new Location(8, 11));
 		turnTowards(Direction.NORTH);
-		checkWallSegments(2);
+		checkWallSegments(3);
 		paule.move();
 		checkDoor();
-		checkWallSegments(2);
+		checkWallSegments(3);
 		paule.move();
 	}
 
@@ -87,7 +80,14 @@ public final class HabitatHamsterGame extends SimpleHamsterGame {
 	private void checkSouthernHouseWall() {
 		assert paule.getLocation().equals(new Location(7, 0));
 		turnTowards(Direction.EAST);
-		checkWallSegments(10);
+		checkWallSegments(3);
+		turnRight();
+		paule.move();		
+		paule.turnLeft();
+		checkWallSegments(1);
+		paule.move();
+		checkDoor();
+		checkWallSegments(5);
 		paule.move();
 	}
 
